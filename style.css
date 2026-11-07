@@ -1,0 +1,28 @@
+:root{--red:#8B1E1E;--ink:#1d1512;--cream:#F4E9D8;--paper:#FBF6EE;--line:#E3D3BC;--muted:#6b5a4e;--accent:#C9A15A}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:"Noto Sans Arabic","Segoe UI",Tahoma,Arial,sans-serif;line-height:1.75;font-size:16px}
+.band{height:22px;background:
+ linear-gradient(135deg,var(--red) 25%,transparent 25%) -11px 0/22px 22px,
+ linear-gradient(225deg,var(--red) 25%,transparent 25%) -11px 0/22px 22px,
+ linear-gradient(315deg,var(--ink) 25%,transparent 25%) 0 0/22px 22px,
+ linear-gradient(45deg,var(--ink) 25%,var(--cream) 25%) 0 0/22px 22px}
+header{background:var(--red);color:var(--cream);text-align:center;padding:42px 16px 34px}
+header h1{margin:8px 0 4px;font-size:2.1rem;letter-spacing:.5px}
+header p{margin:0;opacity:.9}
+.logo{width:84px;height:84px;margin:0 auto;border-radius:20px;background:var(--cream);display:grid;place-items:center}
+.logo i{width:44px;height:44px;background:var(--red);transform:rotate(45deg);box-shadow:inset 0 0 0 9px var(--cream),inset 0 0 0 15px var(--ink)}
+nav{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:14px 16px;border-bottom:1px solid var(--line);background:var(--cream)}
+nav a{color:var(--red);text-decoration:none;font-weight:600;padding:4px 10px;border-radius:8px}
+nav a:hover,nav a:focus{background:#fff}
+main{max-width:760px;margin:0 auto;padding:28px max(16px,env(safe-area-inset-left)) 40px}
+h2{color:var(--red);font-size:1.35rem;margin:34px 0 8px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+h3{font-size:1.05rem;margin:18px 0 4px}
+.en{direction:ltr;text-align:left;font-family:"Segoe UI",Helvetica,Arial,sans-serif}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:12px 0}
+.steps{counter-reset:s;list-style:none;padding:0}
+.steps li{counter-increment:s;position:relative;padding-inline-start:40px;margin:10px 0}
+.steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:2px;width:28px;height:28px;border-radius:50%;background:var(--red);color:var(--cream);display:grid;place-items:center;font-weight:700;font-size:.9rem}
+.mail{font-weight:700;color:var(--red);user-select:all;direction:ltr;display:inline-block}
+footer{text-align:center;color:var(--muted);font-size:.9rem;padding:24px 16px 40px;border-top:1px solid var(--line)}
+footer a{color:var(--red)}
+hr.sep{border:0;height:1px;background:var(--line);margin:40px 0}
